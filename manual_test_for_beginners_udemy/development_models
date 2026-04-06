@@ -1,0 +1,19 @@
+### The most known development models
+---
+#### Sequencial Software Development(Waterfall vs V-model)
+- Both are considered as sequencial development models and the fundamental caractheristic is that one phase only beggins when the previous one is completely ended.
+- For software testing this means that the testing phase just beggins at the end of the life cycle.
+
+> ***Waterfall***
+>> - Consists in 5/6 phases(it depens of the source): Requirement analysis, System Design, Implementation, Testing, Deplyoment and Maintenance.
+>> - If anything is incorrect at the early phases of the cycle, it is necessary to adjust and perform all the steps again.
+>> - It is suitable for small teams/companies
+
+> ***V-model*** (also known as verification and validation model)
+>> - It's a variant of the waterfall model. For each development phase we have a corresponding testing phase.
+>> - This structure brings the testing to the beginning of the development process, but it still have the sequence of phases to be followed.
+>> - On the left: Requirement analysis, system design, architecture design, module design, coding (descending)
+>> - On the right: Unit testing, Integration testing, System testing, Acceptance testing(ascending)
+>> - Suitable for stable, small-to-medium-sized projects where requirements are clearly defined and unlikely to change. 
+
+#### Agile Software Development
