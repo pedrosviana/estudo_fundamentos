@@ -17,3 +17,20 @@
 >> - Suitable for stable, small-to-medium-sized projects where requirements are clearly defined and unlikely to change. 
 
 #### Agile Software Development
+- This type of life cycle try to integrate the end user throughout the whole proccess of the software development.
+- The idea is to build useful softwares since the first deploy.
+- Agile is divided in to types: iterative and incremental
+
+> ***Iterative***
+>> - The goal is to develop a useful system since the beginning and along the process adding more functions to it.
+
+> ***Incremental*** 
+>> - Develop all the parts of the software and only at the end deliver a useful system. 
+
+> ***Introduction to Scrum***
+>> - It is a way to apply the principles of Agile Manifesto. One of the most known and used agile method.
+>> - It has this structure:
+>>> - Product Backlog: It constains all the requirements of our software
+>>> - User stories: The document format in which our requirements will be written: "as a user, I want something, in order to achieve..."
+>>> - Sprint: A cycle of user stories that will be developed in a certain period of time(1 to 4 weeks)
+>>> - Stand up meeting: Doing daily to tell what is done, what still have to be done and if the team are facing any problem;
