@@ -21,3 +21,21 @@
 
 ---
 
+#### Testing levels
+> They are exposed when we talk abou the view model. Each phase of development corresponds to a test level.
+>> According to ISTQB they are
+>>> Groups of activities organized and managed together
+>>> Each one of them are an instance of the test process<br>
+>> The test levels:
+>>> Component testing or unit testing: **The componentes are tested separately(each function, logic, validation, api endpoint)**
+>>> Integration testing: **Test the integrations between the componentes or the systems** 
+>>> System testing: **Also known as end to end test. It includes testing the whole system now as a "unique" piece. In this level of test the functinal and non functional requirements are validated(functional and non functional testing)**
+>>> Acceptance testing: **This test is perfomed by the end user and it's done to ensure the "adaptability" of the end user to the system. Often divided into two main types: alpha and beta. **
+
+#### Testing types
+> Functional: **It tests what the system does.**
+> Non-functional: **Testing how the system performs**
+>>It includes a lot of sub types of tests inside it: performance, security..<br>
+> Black box testing: **I consider a approach**: Testing without knowing the internal structure of the system.
+> Testing white monitoring the internal structure of the system.
+> Smoke testing: **Small tests performed on essential parts of a new software build released. It helps to assure that the build is stable enough for further tests. **
