@@ -38,4 +38,4 @@ These are the activities proposed by ISTQB: (review this secion and gain a deepe
 >> Test Design
 >> Test implementation
 >> Test execution
->> Test Completion
+>> Test Completion/closure
