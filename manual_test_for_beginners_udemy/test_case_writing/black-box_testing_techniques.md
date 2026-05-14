@@ -56,3 +56,26 @@
 - Calculating coverage(equivalence partitioning): number of partitions covered by test cases divided by the total number of partitions
 - Calculating coverage(boudary-value analysis coverage):Number of boundaries covered by test cases divided by total number of boundaries.
 - Testing two values from the same partition doesn't increase coverage
+
+---
+
+### Decision Table Testing
+>- It's used when we have different combinations of input, that result in different outcomes. (Everytime we have a test situation where we have a combination that may influence the result, it's necessary to mix this inpust.) *Fazer exercício com o fluxo do TCP*
+>- How to apply:
+>>- List the inputs and their options(yes, no, 1, 2, 3...)
+>>- List the outputs
+>>- For each combination indicate the expected result:
+>>- Example: To get discount you must: 1- buy items more than $100(yes/no), 2- Have a gold subscription(yes/no)
+
+|**Conditions** |TC1|TC2|TC3|TC4| 
+|:---|:---|:---|:---|:---|
+|More than $100| T | T | F | F |
+|Gold subscription| T | F | T | F
+|**Actions**|
+|Apply discount| X |  |  | 
+|Don't apply discount|  | X | X | X
+
+---
+
+### State-Transition Testing
+>-
