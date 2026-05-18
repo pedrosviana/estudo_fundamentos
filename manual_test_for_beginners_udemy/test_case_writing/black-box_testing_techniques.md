@@ -78,4 +78,14 @@
 ---
 
 ### State-Transition Testing
->-
+>- Each modification in the software must goes from a stable state to another;
+>- Some requirements will have different results throught the different states;
+>- The final states of the system, those we want to achieve are called a dead state;
+
+---
+
+### Pairwise Testing
+>- If the system has a lot of inputs, with a few options in each one, we need to test the combination of these inputs, to garantee that they work together.
+>- If the inputs are too much it's not feasable to test all the combinations, so we use pairwise testing to validate that every option will be used at least once.(this didn't make sense to me)
+check: [link](https://pairwise.yuuniworks.com/)
+[link](https://pairwise.teremokgames.com/)
