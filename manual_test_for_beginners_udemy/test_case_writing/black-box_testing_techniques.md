@@ -56,3 +56,36 @@
 - Calculating coverage(equivalence partitioning): number of partitions covered by test cases divided by the total number of partitions
 - Calculating coverage(boudary-value analysis coverage):Number of boundaries covered by test cases divided by total number of boundaries.
 - Testing two values from the same partition doesn't increase coverage
+
+---
+
+### Decision Table Testing
+>- It's used when we have different combinations of input, that result in different outcomes. (Everytime we have a test situation where we have a combination that may influence the result, it's necessary to mix this inpust.) *Fazer exercício com o fluxo do TCP*
+>- How to apply:
+>>- List the inputs and their options(yes, no, 1, 2, 3...)
+>>- List the outputs
+>>- For each combination indicate the expected result:
+>>- Example: To get discount you must: 1- buy items more than $100(yes/no), 2- Have a gold subscription(yes/no)
+
+|**Conditions** |TC1|TC2|TC3|TC4| 
+|:---|:---|:---|:---|:---|
+|More than $100| T | T | F | F |
+|Gold subscription| T | F | T | F
+|**Actions**|
+|Apply discount| X |  |  | 
+|Don't apply discount|  | X | X | X
+
+---
+
+### State-Transition Testing
+>- Each modification in the software must goes from a stable state to another;
+>- Some requirements will have different results throught the different states;
+>- The final states of the system, those we want to achieve are called a dead state;
+
+---
+
+### Pairwise Testing
+>- If the system has a lot of inputs, with a few options in each one, we need to test the combination of these inputs, to garantee that they work together.
+>- If the inputs are too much it's not feasable to test all the combinations, so we use pairwise testing to validate that every option will be used at least once.(this didn't make sense to me)
+check: [link](https://pairwise.yuuniworks.com/)
+[link](https://pairwise.teremokgames.com/)
