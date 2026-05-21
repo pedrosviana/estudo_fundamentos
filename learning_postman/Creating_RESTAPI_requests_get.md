@@ -14,3 +14,12 @@
 - Most of the time will be case sensitive
 - If I want to use more than one parameter the syntax will be: url?parameterkey=value`&name=xpto`
 >- Example: ``https://simple-grocery-store-api.click/products?category=dairy&name=milk``
+
+---
+
+### Path variables
+- It's a way to search for specific values
+- The common notation would be: `https://simple-grocery-store-api.click/products/1223`
+- In postman we can use the path variables:`https://simple-grocery-store-api.click/products/:productId`, where :productId will work like a variable with the value 1223   
+![postman screenshot](image.png)
+- The difference between path variables and query parameters is that path variables are part of the path, while query parameters are a way to refine the endpoint
