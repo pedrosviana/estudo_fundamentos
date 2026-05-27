@@ -22,4 +22,7 @@
 - The common notation would be: `https://simple-grocery-store-api.click/products/1223`
 - In postman we can use the path variables:`https://simple-grocery-store-api.click/products/:productId`, where :productId will work like a variable with the value 1223   
 ![postman screenshot](image.png)
-- The difference between path variables and query parameters is that path variables are part of the path, while query parameters are a way to refine the endpoint
+
+### Query parameters vs path variables
+- The difference between path variables and query parameters is that path variables are part of the path, while query parameters are a way to refine the endpoint.
+- Another thing to pay attention is that query parameters are not required, while path variables are.
