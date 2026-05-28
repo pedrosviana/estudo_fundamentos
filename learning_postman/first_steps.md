@@ -19,3 +19,5 @@
 >>- Status code
 >>- Headers
 >>- Body
+
+### HTTP methods
