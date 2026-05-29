@@ -12,4 +12,8 @@
      "hobbies": ["netflix", "mountain biking"] **array**
     }
 
-    
+---
+
+### Usaing random data
+- When sending requests it's possible to use random data from postman
+- The syntax is used in the body by: {{$random...}}. When you type this postman will give the suggestions available to use

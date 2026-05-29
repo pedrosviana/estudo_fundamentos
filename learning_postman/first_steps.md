@@ -21,3 +21,9 @@
 >>- Body
 
 ### HTTP methods
+- GET: retrieve data
+- POST: send date
+- PATCH: update(part of the register)
+- PUT: update the entire register
+- DELETE
+- HEAD
