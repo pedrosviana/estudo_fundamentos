@@ -25,5 +25,5 @@
 - POST: send date
 - PATCH: update(part of the register)
 - PUT: update the entire register
-- DELETE
-- HEAD
+- DELETE: 
+- HEAD: 
