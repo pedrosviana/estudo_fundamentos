@@ -1,4 +1,4 @@
-### Working with functions
+## Working with functions
 
 ##### Understanding functions
 
@@ -23,4 +23,25 @@ console.log(add(number1,number2))``
 ##### Built-in js functions
 - Native functions from javascript that can be used within other functions.
 [Developer Mozilla reference - guide for built in functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+
+---
+
+##### Arrow functions
+``const hello = function (){
+console.log("Hello")}``
+
+- ***A function without a name is an anonymous function***
+- Another way to use a function without a name is to use arrow functions:
+
+`const hello = (name) => {
+return `Hello${name}!`}`
+
+
+##### Callback functions
+
+
+
+
+
+
 
