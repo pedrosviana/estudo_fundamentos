@@ -38,7 +38,8 @@ return `Hello${name}!`}`
 
 
 ##### Callback functions
-
+- How to use a function inside another function? - callback functions
+- Assyncronous?
 
 
 
