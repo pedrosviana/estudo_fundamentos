@@ -33,13 +33,26 @@ console.log("Hello")}``
 - ***A function without a name is an anonymous function***
 - Another way to use a function without a name is to use arrow functions:
 
-`const hello = (name) => {
-return `Hello${name}!`}`
+``const hello = (name) => {
+return `Hello${name}!`}``
 
 
 ##### Callback functions
-- How to use a function inside another function? - callback functions
-- Assyncronous?
+
+- We generally use it to pass a function as an argument to another function;
+- That way we can call a function latter, after doing what we want to do;
+``const announceBreakfast = () =>{
+    console.log('Breakfast is ready!');
+}
+``
+
+
+``function makeBreakfast(callbackFunction){
+    console.log('Starting to make breakfast');
+    callbackFunction();
+    console.log('Serving coffee')
+    }
+``
 
 
 
