@@ -24,3 +24,10 @@
     }
 }``
 - The reason is that using 'this.' we can change the object name and the method will keep working.
+
+## Javascript objects vs JSON
+
+- An object is a type of data using in various applications when coding
+- JSON is a way to represent and transfer data when doing and receiving requests
+- We can also transform an object in a JSON with a built-in method of Javascript ***JSON.stringfy()***
+- The opposite is also true, we can transform a JSON in a javascript object, using: ***JSON.parse()***
