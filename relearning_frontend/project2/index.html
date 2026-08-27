@@ -10,20 +10,22 @@
 <body>
     <form action="processa.html" method="post">
         Email: <br>
-        <input type="email" name="email" placeholder="Digite seu e-mail"> <br>
+        <input required type="email" name="email" placeholder="Digite seu e-mail"> <br>
         Senha: <br>
-        <input type="password" name="senha" placeholder="Digite sua senha"> <br>
+        <input required type="password" name="senha" placeholder="Digite sua senha" minlength="5"> <br>
+        Comentário: <br>
+        <textarea name="comentário" placeholder="Digite um comentário" id=""></textarea> <br>
 
-        <input type="submit" name="enviar" value="Entrar">
+        <button type="submit">
+            <img src="/relearning_frontend/project2/logo.png" alt="teste" width="32"> Entrar
+        </button>
     </form>   
 
 </body>
 </html>
-
 <!--Tipos de elementos em formulário
 - Ao criar formulário se atentar para a action(para onde enviar os dados) e a forma como esses dados serão enviados
 
 -->
-
 
 
