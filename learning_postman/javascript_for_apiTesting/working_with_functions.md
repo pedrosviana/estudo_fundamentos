@@ -53,9 +53,3 @@ return `Hello${name}!`}``
     console.log('Serving coffee')
     }
 ``
-
-
-
-
-
-
