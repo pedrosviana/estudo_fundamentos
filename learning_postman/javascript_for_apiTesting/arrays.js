@@ -24,3 +24,4 @@ const person = {
 }
 let personJson = JSON.stringify(person)
 console.log(personJson)
+
