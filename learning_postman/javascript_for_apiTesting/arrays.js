@@ -11,7 +11,16 @@ console.log(sequency.shift())
 console.log(sequency)*/
 
 
-let a = [5, 55]
-a.push(a.shift())
-
-console.log(a)
+const person = {
+    name: "Pedro",
+    age: 26,
+    sleep: function(age) {
+        if(age > 25){
+            return "You're getting old!"
+        }else{
+            return "You're still young."
+        }
+    }
+}
+let personJson = JSON.stringify(person)
+console.log(personJson)
