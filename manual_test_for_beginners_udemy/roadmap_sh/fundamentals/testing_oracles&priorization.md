@@ -109,3 +109,13 @@ In real projects, these are usually combined. For example, a checkout feature mi
 - a **regression** oracle for the invoice layout,
 - an **independent** oracle to reconcile totals with the payment provider,
 - **heuristic** exploratory testing to catch anything that just looks wrong.
+
+---
+
+## How to apply test oracles
+
+### The basic question to guide this is: _"Where does my expected result come from?"_
+- **_Is there a written requirement with a concrete answer?_** Use a specification oracle. Pick inputs at the boundaries the spec implies (for “over $50”, test $49.99, $50.00, and $50.01).
+- **_Is the behavior supposed to stay the same as before?_** Use a regression oracle, typically after refactors or bug fixes. Don’t blindly approve snapshot diffs. Each difference is either an intended change or a bug, and you have to decide which.
+- **_Can another trustworthy system compute the same thing?_** Use an independent oracle. First check that it really is independent. Shared libraries or copied logic mean shared bugs.
+- **_Nothing written and nothing to compare, but something feels off?_** Use a heuristic oracle. This is your judgment: plausibility, consistency, “would a reasonable user accept this?”
