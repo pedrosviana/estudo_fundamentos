@@ -7,7 +7,7 @@
 #### The oracle types
     - Specification: written requirement;
     - Regression: It uses a previous version of the software as benchmark;
-    - Independent: It involves a totally different system that performsthe same calculation;
+    - Independent: It involves a totally different system that performs the same action;
     - Heuristic: It relies on human judgement, intuition and common sense.
 
 #### The core conflict about oracles
@@ -119,3 +119,35 @@ In real projects, these are usually combined. For example, a checkout feature mi
 - **_Is the behavior supposed to stay the same as before?_** Use a regression oracle, typically after refactors or bug fixes. Don’t blindly approve snapshot diffs. Each difference is either an intended change or a bug, and you have to decide which.
 - **_Can another trustworthy system compute the same thing?_** Use an independent oracle. First check that it really is independent. Shared libraries or copied logic mean shared bugs.
 - **_Nothing written and nothing to compare, but something feels off?_** Use a heuristic oracle. This is your judgment: plausibility, consistency, “would a reasonable user accept this?”
+
+---
+
+## Categories of test oracles
+| Category | How it judges | Example |
+| --- | --- | --- |
+Specified / spec-derived | Expected result computed from a written rule | Checkout total = $102.06 from the discount, shipping, and tax rules
+Human / example-based |	A person calculates or knows the right answer  for one input|	reverse([1,2,3]) = [3,2,1]
+Invariant (property)|	A condition true for every input, with no expected value|	Shipping is always $0 or $8
+Metamorphic|	A relationship between two executions|	reverse(reverse(x)) == x
+Reference / comparison|	Compare with another implementation’s output|	New system vs. trusted old system, or a spreadsheet
+Regression / previous version|	The last release’s behavior is assumed correct|	Snapshot or golden-file tests
+Inverse / round-trip|	Undo the operation and compare with the original	|decode(encode(x)) == x
+Implicit|	Universal expectations needing no spec|	No crash, no hang, no data corruption, no security hole
+Heuristic / statistical|	Plausible but not certain; flags results for review|	“A checkout should take under 3 seconds”, “this total is far from the usual range”
+Assumption-based|	A rule you decided yourself, written down and awaiting confirmation|	“Wrong password should show a generic error”
+
+## Sources of the oracles
+
+| Source | Examples |
+| --- | --- | 
+Requirements and specifications | Business rules, user stories, acceptance criteria, API contracts| 
+Design documents |	UX mockups, wireframes, architecture documents 
+Standards and regulation |	OWASP, ISO standards, accessibility rules (WCAG), tax law, RFCs
+Domain knowledge|	Math, physics, accounting rules, business logic
+Existing systems|	Previous versions, a competitor’s product, a legacy system, a reference implementation
+Comparable products and conventions|	“All login pages work like this”, platform UI guidelines
+Independent calculation|	A spreadsheet, a script, or a hand calculation by the tester
+People|	Product owner, subject matter expert, support staff, users
+Documentation|	User manuals, help text, release notes, marketing material
+Defect history|	Past bug reports that show what “wrong” has looked like
+Tester’s own experience|	Familiarity with similar systems (the weakest source, and the one you must record as an assumption)
